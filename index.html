@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>みゆう専用サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>みゆう専用サイト</h1>
+    </header>
+    <main>
+        <div class="calendar-controls">
+            <button id="prevMonthBtn">前の月</button>
+            <span id="currentMonth"></span>
+            <button id="nextMonthBtn">次の月</button>
+        </div>
+        <div class="date-selector">
+            <label for="yearSelect">年: </label>
+            <select id="yearSelect"></select>
+            <label for="monthSelect">月: </label>
+            <select id="monthSelect"></select>
+            <button id="goToDateBtn">移動</button>
+        </div>
+        <div id="workSummary">
+            <p id="totalHours">今月の合計勤務時間: 0 時間</p>
+            <p id="totalSalary">今月の給料: 0 円</p>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>日</th>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- カレンダーの日付がJavaScriptで動的に生成されます -->
+            </tbody>
+        </table>
+        <div class="shift-controls">
+	    <button class="shiftBtn" data-shift-time="16:00-21:00">16:00-21:00</button>
+            <button class="shiftBtn" data-shift-time="17:30-21:00">17:30-21:00</button>
+            <button class="shiftBtn" data-shift-time="18:00-21:00">18:00-21:00</button>
+            <button class="shiftBtn" data-shift-time="12:00-21:00">12:00-21:00</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
