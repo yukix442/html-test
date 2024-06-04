@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-controls {
+    margin-bottom: 20px;
+}
+
+.date-selector {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    table-layout: fixed; /* セルの幅を固定 */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: calc(100% / 7); /* セルの幅を均等に */
+    height: 100px; /* セルの高さを固定 */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f2f2f2;
+}
+
+td.saturday {
+    background-color: #b3e5fc;
+}
+
+td.sunday,
+td.holiday {
+    background-color: #ffccbc;
+}
+
+.holiday-text {
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.shift-time {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.shift-controls {
+    margin-top: 20px;
+}
+
+.shiftBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px 10px 0;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shiftBtn:hover {
+    background-color: #005f6b;
+}
+
+.shiftBtn.active {
+    background-color: #4CAF50;
+}
+
+.work-summary {
+    margin-top: 20px;
+}
+
+.work-summary p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.work-summary p:first-child {
+    margin-top: 0;
+}
